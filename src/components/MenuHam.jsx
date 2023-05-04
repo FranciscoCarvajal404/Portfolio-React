@@ -90,7 +90,7 @@ const Div = styled.div`
 
 .active{
     opacity: 1;
-    height: 100vh;
+    height: 91.7vh;
     width: 60%;
 
     ul{
