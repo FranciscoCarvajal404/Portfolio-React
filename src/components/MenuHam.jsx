@@ -15,8 +15,8 @@ const Div = styled.div`
     top: 0;
     left: 5%;
 
-    width: 15%;
-    max-width: 80px;
+    width: 10%;
+    max-width: 70px;
     min-width: 60px;
     filter: invert(99%) sepia(1%) saturate(954%) hue-rotate(167deg) brightness(93%) contrast(107%);
 }
@@ -56,6 +56,7 @@ const Div = styled.div`
 }
 
 .nav-menu{
+    z-index: 1;
     opacity: 0;
     width: 0;
     height: 0;
@@ -69,7 +70,7 @@ const Div = styled.div`
 
     border-radius: 0 0 50% 0;
 
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.4);
     backdrop-filter: blur(10px);
 
     transition: 0.6s all ease;

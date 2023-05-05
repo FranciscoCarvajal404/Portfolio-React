@@ -1,7 +1,7 @@
 import styled from "styled-components"
+
 const HeroDiv = styled.main`
     width: 100vw;
-    height: 90vh;
 
 
     display: flex;
@@ -9,29 +9,122 @@ const HeroDiv = styled.main`
     justify-content: center;
     align-items: center;
 
-    padding: 0 32px;
+    padding: 150px 32px 64px 32px;
     line-height: normal;
 
-    h1{
-        font-size: 2.4rem;
-        margin: 32px 0 32px 0;
+    h2{
+        font-size: 1.5rem;
+        font-weight: 600;
+        align-self: flex-start;
+        margin-top: 32px;
     }
 
+    .wordCarousel {
+    font-size: 2.5rem;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    
+    span{
+            margin-right: 8px;
+        }
+    div {
+        overflow: hidden;
+        position: relative;
+        float: right;
+        height: 110px;
+        padding-top: 10px;
+        margin-top: -10px;
 
-    div{
-        display: flex;
-        flex-direction: column;
-
-        h2{
-        font-size: 1.3rem;
+        
+        li {
+            font-weight: 700;
+            height: auto;
+            margin-bottom: 55px;
+            display: block;
+            text-align: left;
+        }
     }
+}
 
+.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip5 { animation: flip5 12s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
 
-    .arrow{
-        height: auto;
-        width: 20%;
+@keyframes flip2 {
+    0% { margin-top: -180px; }
+    5% { margin-top: -150px;  }
+    50% { margin-top: -150px; }
+    55% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -160px; }
+}
+
+@keyframes flip3 {
+    0% { margin-top: -270px; }
+    5% { margin-top: -180px; }
+    33% { margin-top: -180px; }
+    38% { margin-top: -90px; }
+    66% { margin-top: -90px; }
+    71% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+}
+
+@keyframes flip4 {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -360px; }
+}
+
+@keyframes flip5 {
+    0% { margin-top: -450px; }
+    5% { margin-top: -360px; }
+    20% { margin-top: -360px; }
+    25% { margin-top: -270px; }
+    40% { margin-top: -270px; }
+    45% { margin-top: -180px; }
+    60% { margin-top: -180px; }
+    65% { margin-top: -90px; }
+    80% { margin-top: -90px; }
+    85% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -450px; }
+}
+
+@media screen and (min-width: 569px){
+    @keyframes flip2 {
+    0% { margin-top: -180px; }
+    5% { margin-top: -105px;  }
+    50% { margin-top: -105px; }
+    55% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -160px; }
+}
+
+    h2{
         align-self: center;
     }
+}
+
+@media screen and (min-width: 892px){
+
+
+    @keyframes flip2 {
+    0% { margin-top: -180px; }
+    5% { margin-top: -102px;  }
+    50% { margin-top: -102px; }
+    55% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -160px; }
+}
 }
 `
     
@@ -39,10 +132,16 @@ const HeroDiv = styled.main`
 const Hero = () =>{
     return(
         <HeroDiv>
-            <div>
-                <h1>Construyo fabulosas páginas web</h1>
-                <h2>Desarrollador front end</h2>
-            </div>
+            <h1 className="wordCarousel">
+                <span>¡Hola!, soy</span>
+                <div>
+                    <ul className="flip2">
+                        <li>desarrollador front end</li>
+                        <li>Francisco Carvajal Villegas</li>
+                    </ul>
+                </div>
+            </h1>
+            <h2>Construyo páginas web</h2>
         </HeroDiv>
     )
 }
