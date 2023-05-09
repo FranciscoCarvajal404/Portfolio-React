@@ -6,8 +6,14 @@ const StyledPhoneNave = styled.nav`
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.4);
+    height: 10%;
+    background-color: rgba(0,0,0,0.7);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     padding: 12px 0 8px 0;
 
