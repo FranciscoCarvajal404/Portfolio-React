@@ -34,17 +34,32 @@ const SliderStyled = styled.section`
     }
 
     .slider{
+        width: 100%;
+        overflow: hidden;
+
+        padding: 0 32px;
+    }
+
+    .slider-track{
         display: flex;
 
+        width: calc(250px * 12);
         overflow: hidden;
         overflow-x: auto;
 
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
+        animation: scroll 40s linear infinite;
 
-        width: 100%;
+        @keyframes scroll {
+            0%{
+                transform: translateX(0);
+                -webkit-transform: translateX(0);
+            }
 
-        box-sizing: content-box;
+            100%{
+                transform: translateX(calc(-250px * 6));
+                -webkit-transform: translateX(calc(-250px * 6));
+            }
+        }
 
     }
 `
@@ -59,6 +74,16 @@ const Slider = ({slides}) =>{
             </div>
 
             <div className="slider">
+                <div className="slider-track">
+                {
+                    slides.map((slide, key)=>{
+                        const {imgPhone, title, tech} = slide
+                        
+                        return(
+                            <Slide key={key} imgPhone={imgPhone} title={title} tech={tech}/>
+                        )
+                    })
+                }
                 {
                     slides.map((slide, key)=>{
                         const {imgPhone, title, tech} = slide
@@ -69,6 +94,8 @@ const Slider = ({slides}) =>{
                     })
                 }
             </div>
+            </div>
+            
             
         </SliderStyled>
     )

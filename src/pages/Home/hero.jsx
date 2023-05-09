@@ -16,7 +16,7 @@ const HeroDiv = styled.main`
         font-size: 1.5rem;
         font-weight: 600;
         align-self: flex-start;
-        margin-top: 32px;
+        margin-top: 16px;
     }
 
     .wordCarousel {
