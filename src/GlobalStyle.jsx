@@ -157,6 +157,7 @@ body {
     color: ${colorTexto};
 
     font-weight: 400;
+    line-height: normal;
 }
 
 body{
@@ -172,7 +173,11 @@ h1{
 }
 
 h2,h3{
-  font-weight: 500;
+  font-weight: 700;
+}
+
+p{
+  line-height: 1.5;
 }
 `
 

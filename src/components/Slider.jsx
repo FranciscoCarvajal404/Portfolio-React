@@ -11,7 +11,7 @@ const SliderStyled = styled.section`
     align-items: center;
     justify-content: center;
 
-    margin-bottom: 128px;
+    margin-bottom: 64px;
 
     .portfolio{
         display: flex;
@@ -45,7 +45,7 @@ const SliderStyled = styled.section`
 
         width: calc(250px * 12);
         overflow: hidden;
-        overflow-x: auto;
+
 
         animation: scroll 40s linear infinite;
 
