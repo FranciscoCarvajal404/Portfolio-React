@@ -4,6 +4,7 @@ import Slider from "../../components/Slider"
 import {slides} from "../../components/slides"
 import Acerca from "./Acerca"
 import Habilidades from "./Habilidades"
+import Proyectos from "./Proyectos"
 
 const Home = () =>{
     return(
@@ -12,6 +13,7 @@ const Home = () =>{
             <Slider slides={slides}/>
             <Acerca/>
             <Habilidades/>
+            <Proyectos/>
         </>
         
     )

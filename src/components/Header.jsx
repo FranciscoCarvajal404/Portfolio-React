@@ -4,6 +4,9 @@ const Nav = styled.nav`
     width: 100%;
     padding: 16px 32px;
     display: none;
+    z-index: 2;
+
+    transition: 0.3s all ease;
 
     ul{
         display: flex;
@@ -13,6 +16,7 @@ const Nav = styled.nav`
         li{
             font-weight: 700;
             font-size: 1.1rem;
+            cursor: pointer;
         }
     }
 
@@ -23,10 +27,20 @@ const Nav = styled.nav`
     }
 `
 
+const animateHeader = (e) =>{
+    e.preventDefault();
+    const header = document.querySelector(".header");
+
+    const windowHeight = window.scrollY;
+    header.classList.toggle("header--active", windowHeight>0);
+}
+
+window.addEventListener("scroll", animateHeader);
+
 const Header = () =>{
     return(
         <>
-            <Nav>
+            <Nav className="header">
                 <ul>
                     <li>Acerca</li>
                     <li>Habilidades</li>

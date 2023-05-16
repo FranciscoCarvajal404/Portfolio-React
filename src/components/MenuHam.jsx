@@ -115,6 +115,8 @@ const Div = styled.div`
 
 .opened{
     background-color: transparent;
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
     transition: 0.6s all ease;
 }
 

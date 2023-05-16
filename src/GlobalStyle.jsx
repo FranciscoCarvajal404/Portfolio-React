@@ -180,6 +180,13 @@ h2,h3{
 p{
   line-height: 2.5;
 }
+
+.header--active{
+        background-color: rgba(0,0,0,0.6);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        transition: 0.3s all ease;
+    }
 `
 
 export default GlobalStyle

@@ -7,6 +7,8 @@ const StyledAcerca = styled.section`
     padding: 0 32px;
 
     margin-bottom: 64px;
+    
+    gap: 32px;
 
     .info{
         display: flex;
