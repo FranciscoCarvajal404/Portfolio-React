@@ -16,8 +16,10 @@ const Nav = styled.nav`
         }
     }
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 1024px){
         display: block;
+        position: sticky;
+        top: 0;
     }
 `
 

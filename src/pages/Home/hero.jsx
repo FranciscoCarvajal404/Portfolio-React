@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const HeroDiv = styled.main`
-    width: 100vw;
+    width: 100%;
 
 
     display: flex;
@@ -9,7 +9,7 @@ const HeroDiv = styled.main`
     justify-content: center;
     align-items: center;
 
-    padding: 150px 32px 64px 32px;
+    padding: 116px 32px 64px 32px;
     line-height: normal;
 
     h2{
@@ -125,6 +125,12 @@ const HeroDiv = styled.main`
     99.99% { margin-top: 0px; }
     100% { margin-top: -160px; }
 }
+
+@media screen and (min-width: 1024px){
+        padding: 0 32px;
+        height: 100vh;
+    }
+
 }
 `
     

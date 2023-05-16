@@ -62,6 +62,10 @@ const SliderStyled = styled.section`
         }
 
     }
+
+    @media screen and (min-width: 1024px){
+        display: none;
+    }
 `
 
 const Slider = ({slides}) =>{

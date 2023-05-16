@@ -6,15 +6,21 @@ const StyledAcerca = styled.section`
 
     padding: 0 32px;
 
+    margin-bottom: 64px;
+
     .info{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         margin-bottom: 16px;
 
         h2{
             font-size: 2.5rem;
             margin-bottom: 16px;
+
+            align-self: flex-start;
         }
 
         p{
@@ -24,6 +30,13 @@ const StyledAcerca = styled.section`
 
     img{
         border-radius: 100%;
+        width: 100%;
+        max-width: 520px;
+    }
+
+    @media screen and (min-width: 1024px){
+        flex-direction: row;
+        justify-content: space-around;
     }
 `
 

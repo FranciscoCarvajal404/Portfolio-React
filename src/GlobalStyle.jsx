@@ -174,10 +174,11 @@ h1{
 
 h2,h3{
   font-weight: 700;
+  font-size: 2.5rem;
 }
 
 p{
-  line-height: 1.5;
+  line-height: 2.5;
 }
 `
 
