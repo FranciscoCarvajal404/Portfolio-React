@@ -18,6 +18,7 @@ const StyledForm = styled.form`
 
         font-size: 1.3rem;
         font-weight: 500;
+        line-height: normal;
 
         padding: 16px;
         margin-bottom: 32px;
@@ -50,9 +51,13 @@ const StyledForm = styled.form`
     }
 `
 
+const handleSubmit = (e) =>{
+    e.preventDefault()
+}
+
 const Form = () =>{
     return(
-        <StyledForm>
+        <StyledForm onSubmit={(e)=>{handleSubmit(e)}}>
             <label htmlFor="name">Nombre</label>
             <input name="name" id="name" type="text"/>
             
