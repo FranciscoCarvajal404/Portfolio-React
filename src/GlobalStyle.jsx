@@ -181,6 +181,16 @@ p{
   line-height: 2.5;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: yellow;
+}
+
+::selection {
+  color: ${colorOscuro};
+  background: ${colorTitulo};
+}
+
 .header--active{
         background-color: rgba(0,0,0,0.6);
         backdrop-filter: blur(10px);

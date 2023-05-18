@@ -5,30 +5,30 @@ const Div = styled.div`
 
 .menu {
     background-color: rgba(0,0,0,0.7);
-    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    transition: 0.6s all ease;
-
+    -webkit-backdrop-filter: blur(10px);
+    
     border: none;
     cursor: pointer;
     display: flex;
     padding: 4px 6px 6px 4px;
     
     z-index: 2;
-
+    
     position: fixed;
     top: 0;
     left: 0%;
-
+    
     border-radius: 0 0 50% 0;
-
+    
     width: 20%;
     max-width: 70px;
     min-width: 60px;
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.6s all ease;
 }
 .line {
     fill: none;

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { colorOscuro, colorTitulo } from "./UI/variables"
+import {colorOscuro, colorTitulo } from "./UI/variables"
 
 const StyledForm = styled.form`
 
@@ -24,6 +24,16 @@ const StyledForm = styled.form`
 
         width: 100%;
         height: 50px;
+
+        ::selection{
+            background-color: ${colorOscuro};
+            color: ${colorTitulo};
+        }
+
+        ::-moz-selection{
+            background-color: ${colorOscuro};
+            color: ${colorTitulo};
+        }
     }
 
     label{

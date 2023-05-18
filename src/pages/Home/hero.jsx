@@ -11,6 +11,16 @@ const HeroDiv = styled.main`
 
     padding: 116px 32px 64px 32px;
     line-height: normal;
+    
+    video{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -1;
+        opacity: 0.1;
+        object-fit: cover;
+    }
+
 
     h2{
         font-size: 1.5rem;
@@ -138,6 +148,9 @@ const HeroDiv = styled.main`
 const Hero = () =>{
     return(
         <HeroDiv>
+            <video autoPlay muted loop controls>
+                <source src="https://rr4---sn-uvu5a2a5t-2cjl.googlevideo.com/videoplayback?expire=1684394389&ei=NX1lZJfoM8uYyAWQ4YrgDA&ip=165.231.182.100&id=o-AHBvD_oVL6hO3cACAeSwj99hncDtLCWqwxbcLuRhA3e0&itag=137&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C278%2C394%2C395%2C396%2C397%2C398%2C399&source=youtube&requiressl=yes&spc=qEK7ByO7du13c1TbhcHaoGDZ4ld8tHEZSQpXlq2o7A&vprv=1&svpuc=1&mime=video%2Fmp4&ns=P1II_mREG_TLZnyl3pdwI9YN&gir=yes&clen=690946112&dur=5690.150&lmt=1651266535219608&keepalive=yes&fexp=24007246&c=WEB&txp=4535434&n=qAfz4O34dZDvaw&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Cgir%2Cclen%2Cdur%2Clmt&sig=AOq0QJ8wRAIgMVHWL4dAbWbqIA-byKemwu7ace7YxQxVYARcYMbqHFgCIDBaiRM9okwSSQkMP0OTnSZ79kof-9nElAopiWFv4bLA&redirect_counter=1&rm=sn-n8vrl7d&req_id=8e1117153466a3ee&cms_redirect=yes&ipbypass=yes&mh=cq&mip=2806:2f0:7420:e697:41ee:5d0f:647c:b08b&mm=31&mn=sn-uvu5a2a5t-2cjl&ms=au&mt=1684383424&mv=m&mvi=4&pl=47&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRAIgRd5ZiHS-U03WN3aKansX3dx0DeJ8ooYTqYi84NoqosMCIE0FZfw-hLCdlEgdlZre0ZscHjbXFmMWYk2ib-WFXvPq"/>
+            </video>
             <h1 className="wordCarousel">
                 <span>¡Hola!, soy</span>
                 <div>

@@ -33,6 +33,7 @@ const StyledHablemos = styled.section`
             width: 100%;
             p{
                 margin-bottom: 64px;
+                font-size: 1.2rem;
             }
         }
 
@@ -41,6 +42,7 @@ const StyledHablemos = styled.section`
             a{
                 text-decoration: underline;
                 margin-bottom: 16px;
+                font-size: 1.2rem;
             }
         }
     }
