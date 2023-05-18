@@ -34,5 +34,5 @@ export const slides = [
         img: '/plusultra.png',
         title: 'PlusUltra ecommerce',
         tech: 'HTML, CSS, JS, CRUD, React'
-    },
+    }
 ]

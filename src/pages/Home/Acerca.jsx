@@ -3,6 +3,8 @@ import styled from "styled-components"
 const StyledAcerca = styled.section`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     padding: 0 32px;
 
@@ -39,6 +41,8 @@ const StyledAcerca = styled.section`
     @media screen and (min-width: 1024px){
         flex-direction: row;
         justify-content: space-around;
+
+        padding: 0 64px;
     }
 `
 

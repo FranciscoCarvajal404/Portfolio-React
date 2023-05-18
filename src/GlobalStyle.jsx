@@ -150,6 +150,7 @@ body {
   -webkit-font-smoothing: antialiased;
   /* opcional */
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 *{

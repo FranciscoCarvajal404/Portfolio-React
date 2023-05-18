@@ -5,6 +5,7 @@ import {slides} from "../../components/slides"
 import Acerca from "./Acerca"
 import Habilidades from "./Habilidades"
 import Proyectos from "./Proyectos"
+import Hablemos from "./Hablemos"
 
 const Home = () =>{
     return(
@@ -14,6 +15,7 @@ const Home = () =>{
             <Acerca/>
             <Habilidades/>
             <Proyectos/>
+            <Hablemos/>
         </>
         
     )

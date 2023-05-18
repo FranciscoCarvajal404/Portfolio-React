@@ -55,6 +55,8 @@ const StyledHabilidades = styled.section`
     }
 
     @media screen and (min-width: 1024px){
+        padding: 0 64px;
+
         .skill-grid{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 128px;
