@@ -10,6 +10,8 @@ const StyledHablemos = styled.section`
     padding: 0 32px;
     gap: 64px;
 
+    margin-bottom: 6rem;
+
 
     .info, .redes{
         display: none;

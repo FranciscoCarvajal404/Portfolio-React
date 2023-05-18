@@ -10,7 +10,6 @@ const StyledForm = styled.form`
     align-items: center;
 
     width: 100%;
-    margin-bottom: 128px;
 
     input{
         background-color: ${colorTitulo};
