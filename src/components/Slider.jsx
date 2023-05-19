@@ -48,7 +48,7 @@ const SliderStyled = styled.section`
         overflow: hidden;
 
 
-        animation: scroll 40s linear infinite;
+        animation: scroll 35s linear infinite;
 
         @keyframes scroll {
             0%{

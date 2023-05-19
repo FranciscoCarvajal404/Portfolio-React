@@ -22,7 +22,7 @@ const StyledProyecto = styled.section`
             max-width: 1250px;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 0;
+            grid-gap: 16px;
 
             img{
                 aspect-ratio: 1/1;
