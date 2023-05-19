@@ -20,6 +20,7 @@ const SliderStyled = styled.section`
         width: 100%;
         padding: 0 32px;
 
+        margin-top: 32px;
         margin-bottom: 32px;
 
         h2{
@@ -72,8 +73,8 @@ const Slider = ({slides}) =>{
 
     return(
         <SliderStyled> 
-            <div className="portfolio">
-                <h2>Portafolio</h2>
+            <div className="portfolio" id="portafolio-mobile">
+                <h2 id="portafolio">Portafolio</h2>
                 <h3>Ver más</h3>
             </div>
 

@@ -69,7 +69,7 @@ const Habilidades = () =>{
     return(
         <StyledHabilidades>
 
-            <h2 className="titulo">Habilidades</h2>
+            <h2 className="titulo" id="skills">Habilidades</h2>
             <div className="skill-grid">
                 {
                     skills.map((skill, i)=>{

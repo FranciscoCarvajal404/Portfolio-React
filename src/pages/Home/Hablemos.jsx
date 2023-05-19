@@ -30,7 +30,7 @@ const StyledHablemos = styled.section`
 
         .info{
             display: block;
-            width: 100%;
+
             p{
                 margin-bottom: 64px;
                 font-size: 1.3rem;
@@ -55,7 +55,7 @@ const Hablemos = () =>{
     return(
         <StyledHablemos>
         <div>
-            <h2>Hablemos</h2>
+            <h2 id="contacto">Hablemos</h2>
                 <div className="info">
                     <p>¿Quieres entrar en contacto conmigo o encontraste algún error? Me gustaría oirte</p>
 

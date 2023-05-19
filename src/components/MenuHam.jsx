@@ -3,10 +3,7 @@ import { colorTitulo } from "./UI/variables"
 
 const Div = styled.div`
 
-.menu {
-    background-color: rgba(0,0,0,0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+.menu { 
     
     border: none;
     cursor: pointer;
@@ -22,7 +19,7 @@ const Div = styled.div`
     border-radius: 0 0 50% 0;
     
     width: 20%;
-    max-width: 70px;
+    max-width: 50px;
     min-width: 60px;
     
     display: flex;
@@ -95,6 +92,7 @@ const Div = styled.div`
             font-weight: 700;
             font-size: 1.5rem;
             opacity: 0;
+            display: none;
         }
     }
 
@@ -108,6 +106,7 @@ const Div = styled.div`
     ul{
         li{
             animation: ani1 0.75s ease-out 0.6s forwards;
+            display: block;
         }
     }
     
@@ -159,10 +158,10 @@ const MenuHam = () =>{
 
             <nav className="nav-menu">
                 <ul>
-                    <li>Acerca</li>
-                    <li>Habilidades</li>
-                    <li>Proyectos</li>
-                    <li>Contacto</li>
+                    <li><a href="#acerca">Acerca</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#portafolio-mobile">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </Div>

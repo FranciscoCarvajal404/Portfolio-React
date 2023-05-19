@@ -160,6 +160,10 @@ body {
     line-height: normal;
 }
 
+html{
+  scroll-padding-top: 55px;
+}
+
 body{
     background-color: ${colorOscuro};
 }
@@ -203,6 +207,18 @@ p{
       :hover{
         color: ${colorAcento};
         transition: 0.3s all ease;
+      }
+    }
+
+    .menu{
+      background-color: rgba(0,0,0,0.7);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    @media screen and (min-width: 1024px){
+      html{
+        scroll-padding-top: 95px;
       }
     }
 `

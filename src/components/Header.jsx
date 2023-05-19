@@ -1,8 +1,10 @@
 import styled from "styled-components"
 
+import logo from "/fc-nobg.png"
+
 const Nav = styled.nav`
     width: 100%;
-    padding: 16px 32px;
+    padding: 0px 32px;
     display: none;
     z-index: 2;
 
@@ -18,6 +20,11 @@ const Nav = styled.nav`
             font-size: 1.1rem;
             cursor: pointer;
         }
+
+    .logo{
+        width: 100%;
+        max-width: 80px;
+    }
     }
 
     @media screen and (min-width: 1024px){
@@ -42,10 +49,11 @@ const Header = () =>{
         <>
             <Nav className="header">
                 <ul>
-                    <li>Acerca</li>
-                    <li>Habilidades</li>
-                    <li>Proyectos</li>
-                    <li>Contacto</li>
+                    <li><a href="/"><img src={logo} className="logo"/></a></li>
+                    <li><a href="#acerca-desk">Acerca</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </Nav>
         </>

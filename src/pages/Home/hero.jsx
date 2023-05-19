@@ -35,7 +35,7 @@ const HeroDiv = styled.main`
         top: 0;
         left: 0;
         z-index: -1;
-        opacity: 0.1;
+        opacity: 0.15;
         object-fit: cover;
     }
 

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import {GrContactInfo} from 'react-icons/gr'
-import {FaToolbox, FaFolderMinus} from 'react-icons/fa'
+import {BiMessageDetail, BiFolderMinus} from 'react-icons/bi'
 
 const StyledPhoneNave = styled.nav`
     position: fixed;
@@ -34,13 +34,21 @@ const StyledPhoneNave = styled.nav`
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
+            a{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
 
     
     .dark-icon{
         filter: invert(99%);
-        width: 20%;
+        width: 100%;
         max-width: 30px;
         height: auto;
     }
@@ -61,16 +69,21 @@ const PhoneNav = () =>{
         <StyledPhoneNave>
             <ul>
                 <li>
-                    <FaFolderMinus className="icon"/>
+                    <BiFolderMinus className="icon"/>
                     Portafolio
                 </li>
                 <li>
-                    <FaToolbox className="icon"/>
-                    Skills
+                    <a href="#contacto">
+                        <BiMessageDetail className="icon"/>
+                        Contacto
+                    </a>
+                    
                 </li>
                 <li>
-                    <GrContactInfo className="dark-icon"/>
-                    CV
+                    <a href="src/assets/CV_FCV.pdf" target="_blank">
+                        <GrContactInfo className="dark-icon"/>
+                        CV
+                    </a>
                 </li>
             </ul>
         </StyledPhoneNave>

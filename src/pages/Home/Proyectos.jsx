@@ -85,7 +85,7 @@ const StyledProyecto = styled.section`
 const Proyectos = () =>{
     return(
         <StyledProyecto>
-            <h2>Últimos proyectos</h2>
+            <h2 id="proyectos">Últimos proyectos</h2>
 
             <div className="grid">
                 {

@@ -52,13 +52,13 @@ const Acerca = () =>{
         <StyledAcerca>
 
             <div className="info">
-                <h2>Acerca</h2>
+                <h2 id="acerca">Acerca</h2>
                 <p>Actualmente con 21 años radicando en Puebla, México.
                     <br/>Soy una persona que cuida mucho los detalles, organizada y que piensa que la planificación es muy importante en un proyecto.
                 </p>
             </div>
 
-            <img src="/yo.jpeg"/>
+            <img src="/yo.jpeg" id="acerca-desk"/>
 
         </StyledAcerca>
     )

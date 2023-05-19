@@ -10,6 +10,7 @@ const StyledForm = styled.form`
     align-items: center;
 
     width: 100%;
+    gap: 48px;
 
     input{
         background-color: ${colorTitulo};
@@ -20,7 +21,6 @@ const StyledForm = styled.form`
         line-height: normal;
 
         padding: 16px;
-        margin-bottom: 32px;
 
         width: 100%;
         height: 50px;
@@ -34,15 +34,30 @@ const StyledForm = styled.form`
             background-color: ${colorOscuro};
             color: ${colorTitulo};
         }
+
+    }
+
+    span{
+        position: relative;
+        bottom: 85px;
+        transition: 0.3s all ease;
+    }
+
+    input:focus+span{
+        color: ${colorAcento};
+        transition: 0.3s all ease;
     }
 
     label{
+        width: 100%;
         align-self: flex-start;
         color: ${colorTitulo};
 
         font-size: 1.5rem;
-        margin-bottom: 16px;
+
+        transition: 0.3s all ease;
     }
+
     
     button{
         border: 1px solid ${colorTitulo};
@@ -61,6 +76,7 @@ const StyledForm = styled.form`
             transition: 0.3s all ease;
         }
     }
+    
 
     .redes-mobile{
         display: flex;
@@ -86,20 +102,29 @@ const handleSubmit = (e) =>{
     e.preventDefault()
 }
 
+
 const Form = () =>{
     return(
         <StyledForm onSubmit={(e)=>{handleSubmit(e)}}>
-            <label htmlFor="name">Nombre</label>
-            <input name="name" id="name" type="text"/>
+            <label htmlFor="name">
+                <input name="name" id="name" type="text"/>
+                <span>Nombre</span>
+            </label>
             
-            <label htmlFor="email">Email</label>
-            <input name="email" id="email" type="email"/>
+            <label htmlFor="email">
+                <input name="email" id="email" type="email"/>
+                <span>Email</span>
+            </label>
             
-            <label htmlFor="subject">Asunto</label>
-            <input name="subject" id="subject" type="text"/>
+            <label htmlFor="subject">
+                <input name="subject" id="subject" type="text" />
+                <span>Asunto</span>
+            </label>
             
-            <label htmlFor="message">Mensaje</label>
-            <input name="message" id="message" type="text"/>
+            <label htmlFor="message">
+                <input name="message" id="message" type="text"/>
+                <span>Mensaje</span>
+            </label>
             
             <button>Enviar</button>
             <div className="redes-mobile">
