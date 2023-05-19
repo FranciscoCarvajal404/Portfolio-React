@@ -9,11 +9,11 @@ const StyledFooter = styled.footer`
 
     width: 100%;
     height: 70px;
-    padding:32px 64px;
+    padding:48px 64px;
 
     display: none;
 
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,1);
 
     h2{
         font-size: 1rem;

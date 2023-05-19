@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import {colorOscuro, colorTitulo } from "./UI/variables"
+import {colorOscuro, colorTitulo, colorAcento } from "./UI/variables"
 
 const StyledForm = styled.form`
 
@@ -53,6 +53,13 @@ const StyledForm = styled.form`
 
         padding: 16px;
         font-size: 1.5rem;
+
+        transition: 0.3s all ease;
+        :hover{
+            color: ${colorAcento};
+            border-color: ${colorAcento};
+            transition: 0.3s all ease;
+        }
     }
 
     @media screen and (min-width: 1024px){

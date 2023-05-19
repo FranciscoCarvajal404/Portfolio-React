@@ -11,7 +11,7 @@ const StyledProyecto = styled.section`
         align-items: center;
         justify-content: center;
 
-        margin: 64px;
+        margin: 128px 64px;
 
         h2{
             margin-bottom: 32px;

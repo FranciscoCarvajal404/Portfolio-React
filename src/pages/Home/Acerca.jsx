@@ -43,6 +43,7 @@ const StyledAcerca = styled.section`
         justify-content: space-around;
 
         padding: 0 64px;
+        margin-bottom: 128px;
     }
 `
 

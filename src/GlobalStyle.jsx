@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { colorOscuro, colorTexto, colorTitulo } from "./components/UI/variables";
+import { colorAcento, colorOscuro, colorTexto, colorTitulo } from "./components/UI/variables";
 
 const GlobalStyle = createGlobalStyle`
 root {
@@ -196,6 +196,14 @@ p{
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         transition: 0.3s all ease;
+    }
+
+    a{
+      transition: 0.3s all ease;
+      :hover{
+        color: ${colorAcento};
+        transition: 0.3s all ease;
+      }
     }
 `
 

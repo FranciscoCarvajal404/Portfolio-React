@@ -7,6 +7,7 @@ const StyledPhoneNave = styled.nav`
     bottom: 0;
     width: 100%;
     height: 10%;
+    max-height: 80px;
     background-color: rgba(0,0,0,0.7);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -40,13 +41,13 @@ const StyledPhoneNave = styled.nav`
     .dark-icon{
         filter: invert(99%);
         width: 20%;
-        max-width: 25px;
+        max-width: 30px;
         height: auto;
     }
 
     .icon{
         width: 20%;
-        max-width: 25px;
+        max-width: 30px;
         height: auto;
     }
 

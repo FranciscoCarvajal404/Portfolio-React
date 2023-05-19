@@ -33,7 +33,7 @@ const StyledHablemos = styled.section`
             width: 100%;
             p{
                 margin-bottom: 64px;
-                font-size: 1.2rem;
+                font-size: 1.3rem;
             }
         }
 
@@ -57,12 +57,12 @@ const Hablemos = () =>{
         <div>
             <h2>Hablemos</h2>
                 <div className="info">
-                    <p>¿Quieres entrar en contacto conmigo o solo charlar un rato? Me gustaría oirte</p>
+                    <p>¿Quieres entrar en contacto conmigo o encontraste algún error? Me gustaría oirte</p>
 
                     <div className="redes">
                         <h2>Redes</h2>
-                        <a href="https://www.linkedin.com/in/francisco-carvajal-villegas/" target="blank">LinkedIn</a>
-                        <a href="https://github.com/FranciscoCarvajal404" target="blank">Github</a>
+                        <a href="https://www.linkedin.com/in/francisco-carvajal-villegas/" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a href="https://github.com/FranciscoCarvajal404" target="_blank" rel="noreferrer">Github</a>
                     </div>
                 </div>
         </div>
