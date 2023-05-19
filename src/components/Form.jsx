@@ -62,8 +62,23 @@ const StyledForm = styled.form`
         }
     }
 
+    .redes-mobile{
+        display: flex;
+        gap: 64px;
+        margin-top: 24px;
+
+        a{
+            font-size: 1.2rem;
+            text-decoration: underline;
+        }
+    }
+
     @media screen and (min-width: 1024px){
         width: 50%;
+
+        .redes-mobile{
+            display: none;
+        }
     }
 `
 
@@ -87,6 +102,10 @@ const Form = () =>{
             <input name="message" id="message" type="text"/>
             
             <button>Enviar</button>
+            <div className="redes-mobile">
+                <a href="https://www.linkedin.com/in/francisco-carvajal-villegas/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://github.com/FranciscoCarvajal404" target="_blank" rel="noreferrer">Github</a>
+            </div>
         </StyledForm>
     )
 }

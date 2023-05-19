@@ -69,6 +69,7 @@ const Hablemos = () =>{
             
 
             <Form/>
+            
         </StyledHablemos>
     )
 }
