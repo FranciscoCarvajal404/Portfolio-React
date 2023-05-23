@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from "react-router-dom"
 import {GrContactInfo} from 'react-icons/gr'
 import {BiMessageDetail, BiFolderMinus} from 'react-icons/bi'
 
@@ -69,14 +70,16 @@ const PhoneNav = () =>{
         <StyledPhoneNave>
             <ul>
                 <li>
-                    <BiFolderMinus className="icon"/>
-                    Portafolio
+                    <Link to='/proyectos'>
+                        <BiFolderMinus className="icon"/>
+                        Proyectos
+                    </Link>
                 </li>
                 <li>
-                    <a href="#contacto">
+                    <Link to="/#acerca">
                         <BiMessageDetail className="icon"/>
                         Contacto
-                    </a>
+                    </Link>
                     
                 </li>
                 <li>

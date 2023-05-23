@@ -44,10 +44,10 @@ img, picture, video, iframe, figure {
   display: block;
   /* opcional */
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   /* opcional */
   -o-object-position: center center;
-     object-position: center center;
+  object-position: center center;
 }
 
 /* Reseteamos los enlaces para funcionar como cajas... */
@@ -218,7 +218,7 @@ p{
 
     @media screen and (min-width: 1024px){
       html{
-        scroll-padding-top: 95px;
+        scroll-padding-top: 130px;
       }
     }
 `

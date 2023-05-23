@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from "react-router-dom"
 
 import logo from "/fc-nobg.png"
 
@@ -49,11 +50,11 @@ const Header = () =>{
         <>
             <Nav className="header">
                 <ul>
-                    <li><a href="/"><img src={logo} className="logo"/></a></li>
+                    <li><Link to="/"><img src={logo} className="logo"/></Link></li>
                     <li><a href="#acerca-desk">Acerca</a></li>
                     <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#contacto-desk">Contacto</a></li>
                 </ul>
             </Nav>
         </>
