@@ -51,10 +51,10 @@ const Header = () =>{
             <Nav className="header">
                 <ul>
                     <li><Link to="/"><img src={logo} className="logo"/></Link></li>
-                    <li><a href="#acerca-desk">Acerca</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contacto-desk">Contacto</a></li>
+                    <li><Link to="/#acerca-desk">Acerca</Link></li>
+                    <li><Link to="/#skills">Habilidades</Link></li>
+                    <li><Link to="/#proyectos">Proyectos</Link></li>
+                    <li><Link to="/#contacto-desk">Contacto</Link></li>
                 </ul>
             </Nav>
         </>
