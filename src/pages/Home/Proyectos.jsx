@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 import { slides } from "../../components/slides"
+import { Link } from "react-router-dom"
 
 const StyledProyecto = styled.section`
     display: none;
@@ -12,10 +13,6 @@ const StyledProyecto = styled.section`
         justify-content: center;
 
         margin: 128px 64px;
-
-        h2{
-            margin-bottom: 32px;
-        }
 
         .grid{
             width: 100%;
@@ -78,6 +75,22 @@ const StyledProyecto = styled.section`
                 }
             }
         }
+
+        .titulo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            width: 100%;
+            max-width: 1250px;
+
+            margin-bottom: 32px;
+
+            p{
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+        }
     
     }
 `
@@ -85,7 +98,10 @@ const StyledProyecto = styled.section`
 const Proyectos = () =>{
     return(
         <StyledProyecto>
-            <h2 id="proyectos">Últimos proyectos</h2>
+            <div className="titulo">
+                <h2 id="proyectos">Últimos proyectos</h2>
+                <Link to='/proyectos'><p>Ver más</p></Link>
+            </div>
 
             <div className="grid">
                 {

@@ -220,6 +220,10 @@ p{
       html{
         scroll-padding-top: 130px;
       }
+
+      .odd{
+            flex-direction: row-reverse;
+        }
     }
 `
 
