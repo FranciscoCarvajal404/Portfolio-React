@@ -1,7 +1,5 @@
 import styled from "styled-components"
 
-import video_bg from "/video-bg.mp4"
-
 const HeroDiv = styled.main`
     width: 100%;
 
@@ -27,18 +25,6 @@ const HeroDiv = styled.main`
             font-size: 1.2rem;
         }
     }
-    
-    video{
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        opacity: 0.1;
-        object-fit: cover;
-    }
-
 
     h2{
         font-size: 1.5rem;
@@ -165,9 +151,6 @@ const HeroDiv = styled.main`
 const Hero = () =>{
     return(
         <HeroDiv>
-            <video autoPlay muted loop>
-                <source src={video_bg}/>
-            </video>
             <h1 className="wordCarousel">
                 <span>¡Hola!, soy</span>
                 <div>

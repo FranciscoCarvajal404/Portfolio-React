@@ -1,6 +1,7 @@
 import GlobalStyle from "./GlobalStyle"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import Bg from "./components/Bg";
 import Home from "./pages/Home"
 import Header from "./components/Header"
 import MenuHam from "./components/MenuHam"
@@ -13,6 +14,7 @@ function App() {
     <>
       <GlobalStyle/>
       <Router basename="/">
+        <Bg/>
         <Header/>
         <MenuHam/>
 
