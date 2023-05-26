@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { colorTitulo } from "./UI/variables"
+import { Link } from "react-router-dom"
 
 const Div = styled.div`
 
@@ -158,10 +159,10 @@ const MenuHam = () =>{
 
             <nav className="nav-menu">
                 <ul>
-                    <li><a href="#acerca">Acerca</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#portafolio-mobile">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><Link to="/#acerca">Acerca</Link></li>
+                    <li><Link to="/#skills">Habilidades</Link></li>
+                    <li><Link to="/#portafolio-mobile">Proyectos</Link></li>
+                    <li><Link to="/#contacto">Contacto</Link></li>
                 </ul>
             </nav>
         </Div>

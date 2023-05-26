@@ -2,6 +2,7 @@
 import styled from "styled-components";
 
 import Slide from "./Slide";
+import { Link } from "react-router-dom";
 
 const SliderStyled = styled.section`
 
@@ -75,7 +76,7 @@ const Slider = ({slides}) =>{
         <SliderStyled> 
             <div className="portfolio" id="portafolio-mobile">
                 <h2 id="portafolio">Portafolio</h2>
-                <h3>Ver más</h3>
+                <h3><Link to='/proyectos'>Ver más</Link></h3>
             </div>
 
             <div className="slider">

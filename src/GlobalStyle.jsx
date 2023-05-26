@@ -216,6 +216,22 @@ p{
       -webkit-backdrop-filter: blur(10px);
     }
 
+    ::-webkit-scrollbar-track{
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: #F5F5F5;
+      background-color: ${colorOscuro};
+    }
+
+    ::-webkit-scrollbar{
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb
+    {
+      background-color: ${colorAcento};
+    }
+
     @media screen and (min-width: 1024px){
       html{
         scroll-padding-top: 130px;
