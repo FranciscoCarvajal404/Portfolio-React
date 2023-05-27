@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { Link } from "react-router-dom"
 
 import logo from "/fc-nobg.png"
+import { HashLink } from "react-router-hash-link"
 
 const Nav = styled.nav`
     width: 100%;
@@ -51,10 +52,10 @@ const Header = () =>{
             <Nav className="header">
                 <ul>
                     <li><Link to="/"><img src={logo} className="logo"/></Link></li>
-                    <li><Link to="/#acerca-desk">Acerca</Link></li>
-                    <li><Link to="/#skills">Habilidades</Link></li>
-                    <li><Link to="/#proyectos">Proyectos</Link></li>
-                    <li><Link to="/#contacto-desk">Contacto</Link></li>
+                    <li><HashLink to="/#acerca-desk">Acerca</HashLink></li>
+                    <li><HashLink to="/#skills">Habilidades</HashLink></li>
+                    <li><HashLink to="/#proyectos">Proyectos</HashLink></li>
+                    <li><HashLink to="/#contacto-desk">Contacto</HashLink></li>
                 </ul>
             </Nav>
         </>

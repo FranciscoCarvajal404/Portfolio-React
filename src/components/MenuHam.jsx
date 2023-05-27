@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { colorTitulo } from "./UI/variables"
 import { Link } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
 
 const Div = styled.div`
 
@@ -159,10 +160,10 @@ const MenuHam = () =>{
 
             <nav className="nav-menu">
                 <ul>
-                    <li><Link to="/#acerca">Acerca</Link></li>
-                    <li><Link to="/#skills">Habilidades</Link></li>
-                    <li><Link to="/#portafolio-mobile">Proyectos</Link></li>
-                    <li><Link to="/#contacto">Contacto</Link></li>
+                    <li><HashLink to="/#acerca">Acerca</HashLink></li>
+                    <li><HashLink to="/#skills">Habilidades</HashLink></li>
+                    <li><HashLink to="/#portafolio-mobile">Proyectos</HashLink></li>
+                    <li><HashLink to="/#contacto">Contacto</HashLink></li>
                 </ul>
             </nav>
         </Div>
