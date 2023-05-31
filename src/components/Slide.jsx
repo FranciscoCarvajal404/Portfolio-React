@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const StyledSlide = styled.div`
 height: 400px;
-width: 30px;
+width: 260px;
 
 margin: 0 8px;
 
@@ -16,7 +16,7 @@ background-size: cover;
 `
 
 // eslint-disable-next-line react/prop-types, no-unused-vars
-const Slide = ({imgPhone, title, tech}) =>{
+const Slide = ({imgPhone, id}) =>{
 
 
     return(

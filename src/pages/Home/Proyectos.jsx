@@ -110,10 +110,12 @@ const Proyectos = () =>{
                         return(
                             <div className="tile" key={i}>
                                 <img src={img}/>
-                                <div className="hover-div">
-                                    <h3>{title}</h3>
-                                    <h4>{tech}</h4>
-                                </div>
+                                <Link to={`/proyectos/${i}`}>
+                                    <div className="hover-div">
+                                        <h3>{title}</h3>
+                                        <h4>{tech}</h4>
+                                    </div>
+                                </Link>
                             </div>
                         )
                     })

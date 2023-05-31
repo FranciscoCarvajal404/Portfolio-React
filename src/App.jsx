@@ -6,7 +6,7 @@ import Home from "./pages/Home"
 import Header from "./components/Header"
 import MenuHam from "./components/MenuHam"
 import PhoneNav from "./components/PhoneNav"
-import Footer from "./components/UI/Footer"
+import Footer from "./components/Footer"
 import Proyectos from "./pages/Proyectos";
 import ProyectoPage from "./components/ProyectoPage";
 import ScrollToTop from "./hooks/ScrollToTop";

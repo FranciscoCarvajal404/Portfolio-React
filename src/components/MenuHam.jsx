@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import { colorTitulo } from "./UI/variables"
-import { Link } from "react-router-dom"
 import { HashLink } from "react-router-hash-link"
 
 const Div = styled.div`

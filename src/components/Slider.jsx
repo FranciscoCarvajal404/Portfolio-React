@@ -13,6 +13,7 @@ const SliderStyled = styled.section`
     justify-content: center;
 
     margin-bottom: 64px;
+    width: 100%;
 
     .portfolio{
         display: flex;
@@ -86,7 +87,9 @@ const Slider = ({slides}) =>{
                         const {imgPhone, title, tech} = slide
                         
                         return(
-                            <Slide key={key} imgPhone={imgPhone} title={title} tech={tech}/>
+                            <Link key={key} to={`/proyectos/${key}`}>
+                                <Slide imgPhone={imgPhone} title={title} tech={tech}/>
+                            </Link>
                         )
                     })
                 }
@@ -95,7 +98,9 @@ const Slider = ({slides}) =>{
                         const {imgPhone, title, tech} = slide
                         
                         return(
-                            <Slide key={key} imgPhone={imgPhone} title={title} tech={tech}/>
+                            <Link key={key} to={`/proyectos/${key}`}>
+                                <Slide imgPhone={imgPhone} title={title} tech={tech}/>
+                            </Link>
                         )
                     })
                 }

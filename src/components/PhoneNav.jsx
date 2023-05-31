@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { Link } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
 import {GrContactInfo} from 'react-icons/gr'
 import {BiMessageDetail, BiFolderMinus} from 'react-icons/bi'
 
@@ -76,10 +77,10 @@ const PhoneNav = () =>{
                     </Link>
                 </li>
                 <li>
-                    <Link to="/#acerca">
+                    <HashLink to="/#contacto">
                         <BiMessageDetail className="icon"/>
                         Contacto
-                    </Link>
+                    </HashLink>
                     
                 </li>
                 <li>
