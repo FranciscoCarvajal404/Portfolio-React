@@ -82,32 +82,30 @@ const Slider = ({slides}) =>{
 
             <div className="slider">
                 <div className="slider-track">
-                {
-                    slides.map((slide, key)=>{
-                        const {imgPhone, title, tech} = slide
-                        
-                        return(
-                            <Link key={key} to={`/proyectos/${key}`}>
-                                <Slide imgPhone={imgPhone} title={title} tech={tech}/>
-                            </Link>
-                        )
-                    })
-                }
-                {
-                    slides.map((slide, key)=>{
-                        const {imgPhone, title, tech} = slide
-                        
-                        return(
-                            <Link key={key} to={`/proyectos/${key}`}>
-                                <Slide imgPhone={imgPhone} title={title} tech={tech}/>
-                            </Link>
-                        )
-                    })
-                }
+                    {
+                        slides.map((slide, key)=>{
+                            const {imgPhone, title, tech} = slide
+                            
+                            return(
+                                <Link key={key} to={`/proyectos/${key}`}>
+                                    <Slide imgPhone={imgPhone} title={title} tech={tech}/>
+                                </Link>
+                            )
+                        })
+                    }
+                    {
+                        slides.map((slide, key)=>{
+                            const {imgPhone, title, tech} = slide
+                            
+                            return(
+                                <Link key={key} to={`/proyectos/${key}`}>
+                                    <Slide imgPhone={imgPhone} title={title} tech={tech}/>
+                                </Link>
+                            )
+                        })
+                    }
+                </div>
             </div>
-            </div>
-            
-            
         </SliderStyled>
     )
 }
