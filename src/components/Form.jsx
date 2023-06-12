@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import emailjs from "emailjs-com"
 
 import {colorOscuro, colorTitulo, colorAcento } from "./UI/variables"
 
@@ -98,14 +99,19 @@ const StyledForm = styled.form`
     }
 `
 
-const handleSubmit = (e) =>{
-    e.preventDefault()
-}
-
-
 const Form = () =>{
+
+    const enviarMail = (e) =>{
+        e.preventDefault()
+        emailjs.sendForm('service_hi9ey3c', 'template_q3t9d27', e.target, 'ERAGA-Frbhfnr9nap').then(res => {
+            alert("Mensaje enviado correctamente")
+            console.log(res);
+        })
+    }
+
+
     return(
-        <StyledForm onSubmit={(e)=>{handleSubmit(e)}}>
+        <StyledForm onSubmit={(e)=>{enviarMail(e)}}>
             <label htmlFor="name" id="contacto-desk">
                 <input name="name" id="name" type="text"/>
                 <span>Nombre</span>
@@ -131,6 +137,8 @@ const Form = () =>{
                 <a href="https://www.linkedin.com/in/francisco-carvajal-villegas/" target="_blank" rel="noreferrer">LinkedIn</a>
                 <a href="https://github.com/FranciscoCarvajal404" target="_blank" rel="noreferrer">Github</a>
             </div>
+
+            <script src="../assets/js/validaciones"></script>
         </StyledForm>
     )
 }
