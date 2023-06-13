@@ -32,11 +32,11 @@ const Proyectos = () => {
         <h1>Proyectos</h1>
         {
             proyectos.map((proyecto, i)=>{
-                const {id, img, title, descripcion,tags} = proyecto
+                const {id, img, title, descripcion,tags, demo} = proyecto
                 if(i % 2 == 1){
                     return <ProjectCard key={i} id={id} imagen={img} titulo={title} tags={tags} descripcion={descripcion} reverse='reverse'/>
                 }else{
-                    return <ProjectCard key={i} id={id} imagen={img} titulo={title} tags={tags} descripcion={descripcion}/>
+                    return <ProjectCard key={i} id={id} imagen={img} titulo={title} tags={tags} descripcion={descripcion} demo={demo}/>
                 }
                 
             })

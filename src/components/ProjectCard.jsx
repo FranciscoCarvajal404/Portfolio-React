@@ -85,11 +85,11 @@ const StyledCard = styled.div`
     }
 `
 
-const ProjectCard = ({ id, imagen, titulo, tags, descripcion,reverse}) =>{
+const ProjectCard = ({ id, imagen, titulo, tags, descripcion,reverse, demo}) =>{
 
     return(
         <StyledCard className={reverse ? 'odd' : ''}>
-            <img src={imagen}/>
+            <a href={demo} target="_blank" rel="noreferrer"><img src={imagen}/></a>
             <div className={reverse}>
                 <h2>{titulo}</h2>
                 <p>{descripcion}</p>

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 import styled from "styled-components"
 
 import { proyectos } from "./proyectos"
+import { colorTitulo, colorAcento } from "./UI/variables"
 
 const StyledPage = styled.div`
 
@@ -32,17 +33,61 @@ const StyledPage = styled.div`
         font-size: 1.25rem;
     }
 
+    .botones{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1000px;
+        margin-bottom: 16px;
+
+        a{
+            width: 45%;
+            button{
+                border: 1px solid ${colorTitulo};
+                padding: 16px;
+                width: 100%;
+                border-radius: 10px;
+    
+                color: ${colorTitulo};
+                font-weight: 700;
+                font-size: 1rem;
+                transition: 0.3s all ease;
+    
+                :hover{
+                    color: ${colorAcento};
+                    border-color: ${colorAcento};
+                    transition: 0.3s all ease;
+                }
+            }
+        }
+
+    }
+
+    @media (width >= 1024px){
+        .botones{
+            a{
+                button{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
 `
 const ProyectoPage = () =>{
     
     let {id} = useParams();
     const project = proyectos[id]
-    const { img, title, intro} = project
+    const { img, title, intro, demo, repo } = project
 
     return(
         <StyledPage>
             <h1>{title}</h1>
-            <img src={img}/>
+            <a href={demo} target="_blank" rel="noreferrer"><img src={img}/></a>
+            <div className="botones">
+                <a href={demo} target="_blank" rel="noreferrer"><button>Demo</button></a>
+                <a href={repo} target="_blank" rel="noreferrer"><button>Repositorio</button></a>
+            </div>
             <div>
                 <p>
                     {intro}
