@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import emailjs from "emailjs-com"
+import { validacion} from "../js/validaciones"
 
 import {colorOscuro, colorTitulo, colorAcento } from "./UI/variables"
 
@@ -47,6 +48,10 @@ const StyledForm = styled.form`
     input:focus+span{
         color: ${colorAcento};
         transition: 0.3s all ease;
+    }
+
+    input:invalid{
+        border: 2px red solid;
     }
 
     label{
@@ -113,23 +118,27 @@ const Form = () =>{
     return(
         <StyledForm onSubmit={(e)=>{enviarMail(e)}}>
             <label htmlFor="name" id="contacto-desk">
-                <input name="name" id="name" type="text"/>
+                <input name="name" id="name" type="text" onBlur={(e)=>validacion(e)}/>
                 <span>Nombre</span>
+                {/* <span className="error-nombre">{mensajeError}</span> */}
             </label>
             
             <label htmlFor="email">
-                <input name="email" id="email" type="email"/>
+                <input name="email" id="email" type="email" onBlur={(e)=>validacion(e)}/>
                 <span>Email</span>
+                {/* <span className="error-email">{mensajeError}</span> */}
             </label>
             
             <label htmlFor="subject">
-                <input name="subject" id="subject" type="text" />
+                <input name="subject" id="subject" type="text" onBlur={(e)=>validacion(e)}/>
                 <span>Asunto</span>
+                {/* <span className="error-subject">{mensajeError}</span> */}
             </label>
             
             <label htmlFor="message">
-                <input name="message" id="message" type="text"/>
+                <input name="message" id="message" type="text" onBlur={(e)=>validacion(e)}/>
                 <span>Mensaje</span>
+                {/* <span className="error-message">{mensajeError}</span> */}
             </label>
             
             <button>Enviar</button>
