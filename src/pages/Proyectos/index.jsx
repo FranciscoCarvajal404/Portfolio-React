@@ -16,6 +16,13 @@ const StyledProyectos = styled.main`
 
     gap: 20px;
 
+    .flex{
+        display: flex;
+        flex-direction: column-reverse;
+
+        gap: 64px;
+    }
+
     h1{
         font-size: 2rem;
 
@@ -30,18 +37,20 @@ const Proyectos = () => {
     return (
     <StyledProyectos>
         <h1>Proyectos</h1>
-        {
-            proyectos.map((proyecto, i)=>{
-                const {id, img, title, descripcion,tags, demo} = proyecto
-                if(i % 2 == 1){
-                    return <ProjectCard key={i} id={id} imagen={img} titulo={title} tags={tags} descripcion={descripcion} reverse='reverse'/>
-                }else{
-                    return <ProjectCard key={i} id={id} imagen={img} titulo={title} tags={tags} descripcion={descripcion} demo={demo}/>
-                }
+        <div className="flex">
+            {
+                proyectos.map((proyecto, i)=>{
+                    const {id, img, title, descripcion,tags, demo} = proyecto
+                    if(i % 2 == 1){
+                        return <ProjectCard key={i} id={id} imagen={img} titulo={title} tags={tags} descripcion={descripcion} demo={demo}reverse='reverse'/>
+                    }else{
+                        return <ProjectCard key={i} id={id} imagen={img} titulo={title} tags={tags} descripcion={descripcion} demo={demo}/>
+                    }
+                    
+                })
                 
-            })
-            
-        }
+            }
+        </div>
     </StyledProyectos>
     )
 }

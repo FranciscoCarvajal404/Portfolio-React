@@ -29,8 +29,12 @@ const StyledPage = styled.div`
         max-width: 1000px;
     }
 
+    .text{
+        max-width: 1000px;
+    }
+
     p{
-        font-size: 1.25rem;
+        font-size: 1.15rem;
     }
 
     .botones{
@@ -88,7 +92,7 @@ const ProyectoPage = () =>{
                 <a href={demo} target="_blank" rel="noreferrer"><button>Demo</button></a>
                 <a href={repo} target="_blank" rel="noreferrer"><button>Repositorio</button></a>
             </div>
-            <div>
+            <div className="text">
                 <p>
                     {intro}
                 </p>

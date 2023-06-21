@@ -20,7 +20,7 @@ const StyledCard = styled.div`
         border: 2px solid ${colorTitulo};
 
         aspect-ratio: 3/2;
-        max-height: 450px;
+        max-height: 600px;
     }
 
     div{
@@ -76,11 +76,11 @@ const StyledCard = styled.div`
         p{
             display: block;
             line-height: 2;
-            font-size: 1.25rem;
+            font-size: 1.15rem;
         }
 
         button{
-            max-width: none;
+            max-width: 40%;
         }
     }
 `

@@ -97,5 +97,23 @@ export const proyectos = [
 
         demo: 'https://franciscocarvajal404.github.io/PlusUltra-eCommerce-React/',
         repo: 'https://github.com/FranciscoCarvajal404/PlusUltra-eCommerce-React'
+    },
+    {
+        id: '6',
+        img: '/country-game.png',
+        title: 'Country game',
+        tags:[ 
+            'HTML',
+            'CSS',
+            'JS',
+            'React',
+            'API REST'
+        ],
+        descripcion: 'Un pequeño juego hecho con react usando la API restcountries v3.1. Acumula puntos acertando las preguntas, en el momento que falles, el juego termina.',
+
+        intro: 'Este es parte de los proyectos propuestos en la página devchallenges.io',
+
+        demo: 'https://franciscocarvajal404.github.io/Country-game/',
+        repo: 'https://github.com/FranciscoCarvajal404/Country-game'
     }
 ]
